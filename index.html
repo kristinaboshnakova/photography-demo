@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Фотография от Алекс</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Зареждане...</p>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div id="progress-bar"></div>
+
+  <!-- Навигация -->
+  <nav id="navbar">
+    <div class="nav-brand">📸 Алекс Фото</div>
+    <button id="menu-toggle">☰</button>
+    <ul id="nav-links">
+      <li><a href="#gallery">Галерия</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#timeline">История</a></li>
+      <li><a href="#contact">Контакт</a></li>
+    </ul>
+  </nav>
+
+  <!-- Dark/Light Mode Button -->
+  <button id="toggle-mode">🌙</button>
+
+  <!-- Header -->
+  <header>
+    <h1>Фотография от Алекс</h1>
+    <div class="typewriter">„Улавям емоции, не просто изображения.“</div>
+  </header>
+
+  <!-- Галерия -->
+  <section id="gallery" class="gallery" data-aos="fade-up">
+    <div class="photo"><img src="https://picsum.photos/id/1015/600/400" loading="lazy"></div>
+    <div class="photo"><img src="https://picsum.photos/id/1011/600/400" loading="lazy"></div>
+    <div class="photo"><img src="https://picsum.photos/id/1005/600/400" loading="lazy"></div>
+  </section>
+
+  <div class="wave"></div>
+
+  <!-- Услуги -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Услуги</h2>
+    <div class="service-list">
+      <div class="service">📸 Фотосесии на открито</div>
+      <div class="service">🏢 Корпоративна фотография</div>
+      <div class="service">🎉 Събитийна фотография</div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section id="portfolio" class="portfolio" data-aos="flip-left">
+    <h2>Моето портфолио</h2>
+    <div class="flip-container">
+      <div class="card">
+        <div class="front"></div>
+        <div class="back">Портрети с фокус върху емоция и светлина.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="timeline">
+    <h2>Моята история</h2>
+    <div class="timeline-container">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>2015</h3>
+          <p>Започнах да снимам пейзажи като хоби.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <h3>2018</h3>
+          <p>Първа изложба в София — „Светлина и тишина“.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>2022</h3>
+          <p>Работа с международни клиенти и корпоративни брандове.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзиви -->
+  <section class="testimonials" data-aos="fade-up">
+    <h2>Отзиви</h2>
+    <div class="testimonial">„Невероятни снимки! Алекс е истински професионалист.“</div>
+    <div class="testimonial">„Улови момента по начин, който ме развълнува.“</div>
+  </section>
+
+  <!-- Parallax -->
+  <div class="parallax">Магията на светлината</div>
+
+  <!-- Контакт -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Свържи се с мен</h2>
+    <form>
+      <input type="text" placeholder="Твоето име" required>
+      <input type="email" placeholder="Имейл адрес" required>
+      <textarea placeholder="Съобщение..."></textarea>
+      <button class="btn" type="submit">Изпрати</button>
+    </form>
+  </section>
+
+<!-- Разширена галерия -->
+<section id="extended-gallery" class="extended-gallery" data-aos="fade-up">
+  <h2>Разширена Галерия</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="https://picsum.photos/id/1040/500/400" alt="photo"></div>
+    <div class="gallery-item"><img src="https://picsum.photos/id/1039/500/500" alt="photo"></div>
+    <div class="gallery-item"><img src="https://picsum.photos/id/1041/500/450" alt="photo"></div>
+    <div class="gallery-item"><img src="https://picsum.photos/id/1033/500/400" alt="photo"></div>
+    <div class="gallery-item"><img src="https://picsum.photos/id/1042/500/450" alt="photo"></div>
+    <div class="gallery-item"><img src="https://picsum.photos/id/1036/500/500" alt="photo"></div>
+  </div>
+</section>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+  <span class="close">&times;</span>
+  <img class="popup-img" src="" alt="popup image">
+  <button class="nav prev">❮</button>
+  <button class="nav next">❯</button>
+</div>
+
+  
+
+  <footer>
+    <p>© 2025 Фотография от Алекс | Всички права запазени</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
